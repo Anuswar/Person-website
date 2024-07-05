@@ -46,22 +46,26 @@
         /* Styling for sections */
         .about-section, .hobbies-section {
             margin-bottom: 30px;
-            
             background-color: #f9f9f9;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .section-content {
             padding: 20px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
         }
 
         .about-section h2, .hobbies-section h2 {
             color: #333;
             font-size: 24px;
             margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .about-section h2::after, .hobbies-section h2::after {
+            content: ' 🌟';
+            font-size: 20px;
         }
 
         .about-section p {
@@ -140,26 +144,27 @@
 <body>
     <header>
         <div class="header-content">
-            <h1>John Doe <span>&#x1F601;</span></h1> 
+            <h1>John Doe <span>&#x1F601;</span></h1>
+            <p>Welcome to my personal website!</p>
         </div>
     </header>
 
     <main>
         <section class="about-section">
             <div class="section-content">
-                <h2>About Me <span>&#x1F913;</span></h2> 
+                <h2>About Me <span>&#x1F913;</span></h2>
                 <p>Hello! I'm John Doe, a passionate individual with a keen interest in technology and creativity.</p>
             </div>
         </section>
 
         <section class="hobbies-section">
             <div class="section-content">
-                <h2>Hobbies <span>&#x1F3A8;</span></h2> 
+                <h2>Hobbies <span>&#x1F3A8;</span></h2>
                 <ul class="hobbies-list">
-                    <li>Photography</li>
-                    <li>Reading</li>
-                    <li>Hiking</li>
-                    <li>Playing Guitar</li>
+                    <li>Photography <span>&#x1F4F7;</span></li>
+                    <li>Reading <span>&#x1F4DA;</span></li>
+                    <li>Hiking <span>&#x1F6B5;</span></li>
+                    <li>Playing Guitar <span>&#x1F3B8;</span></li>
                 </ul>
             </div>
         </section>
