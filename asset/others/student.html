@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Personal Website</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Basic styling for the header */
+        header {
+            background-color: #4CAF50; /* Bright green */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .header-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            display: inline-block; /* Ensures emojis align correctly */
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        /* Styling for main content */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for sections */
+        .about-section, .hobbies-section {
+            margin-bottom: 30px;
+        }
+
+        .section-content {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .about-section h2, .hobbies-section h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .about-section p {
+            line-height: 1.6;
+        }
+
+        /* Styling for hobbies list */
+        .hobbies-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .hobbies-list li {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        /* Styling for footer */
+        footer {
+            background-color: #4CAF50; /* Bright green */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+        /* Responsive media queries */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 28px;
+            }
+            header p {
+                font-size: 16px;
+            }
+            .about-section h2, .hobbies-section h2 {
+                font-size: 22px;
+            }
+            .about-section p {
+                font-size: 16px;
+            }
+            .hobbies-list li {
+                font-size: 16px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px;
+            }
+            header p {
+                font-size: 14px;
+            }
+            .about-section h2, .hobbies-section h2 {
+                font-size: 20px;
+            }
+            .about-section p {
+                font-size: 14px;
+            }
+            .hobbies-list li {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>John Doe <span>&#x1F601;</span></h1> 
+        </div>
+    </header>
+
+    <main>
+        <section class="about-section">
+            <div class="section-content">
+                <h2>About Me <span>&#x1F913;</span></h2> 
+                <p>Hello! I'm John Doe, a passionate individual with a keen interest in technology and creativity.</p>
+            </div>
+        </section>
+
+        <section class="hobbies-section">
+            <div class="section-content">
+                <h2>Hobbies <span>&#x1F3A8;</span></h2> 
+                <ul class="hobbies-list">
+                    <li>Photography</li>
+                    <li>Reading</li>
+                    <li>Hiking</li>
+                    <li>Playing Guitar</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 John Doe. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
