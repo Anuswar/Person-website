@@ -14,7 +14,7 @@
         }
 
         body {
-            background-color: #f9f9f9;
+            background-color: #f0f2f5;
             padding: 20px;
         }
 
@@ -24,27 +24,38 @@
             background-color: #fff;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
+            padding: 30px;
             text-align: center;
         }
 
         .team-image {
+            width: 100%;
             max-width: 200px;
-            border-radius: 50%;
+            height: auto;
+            border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
 
         .team-names {
-            font-size: 24px;
+            font-size: 28px;
             margin-bottom: 10px;
             color: #333;
+            font-weight: bold;
+        }
+
+        .team-members {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
 
         .nss-topic {
-            font-size: 18px;
+            font-size: 20px;
             margin-bottom: 20px;
-            color: #666;
+            color: #FF5733; /* Bright orange */
+            font-weight: bold;
         }
 
         .website-list {
@@ -60,6 +71,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease-in-out;
+            background-color: #fff;
         }
 
         .website-item:hover {
@@ -68,7 +80,7 @@
 
         .website-item a {
             text-decoration: none;
-            color: #4CAF50; /* Bright green */
+            color: #007BFF; /* Bright blue */
             font-weight: bold;
             font-size: 18px;
             display: inline-block;
@@ -85,14 +97,45 @@
             font-size: 20px;
             margin-right: 5px;
         }
+
+        @media (max-width: 600px) {
+            .report {
+                padding: 20px;
+            }
+
+            .team-names {
+                font-size: 24px;
+            }
+
+            .team-members {
+                font-size: 16px;
+            }
+
+            .nss-topic {
+                font-size: 18px;
+            }
+
+            .website-item a {
+                font-size: 16px;
+            }
+
+            .website-item p {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="report">
-        <img src="team_image.jpg" alt="Team Image" class="team-image">
+        <img src="asset/images/team-members.jpeg" alt="Team Image" class="team-image">
         <div class="team-names">Team Members:</div>
-        <p><strong>John Doe</strong>, <strong>Jane Smith</strong>, <strong>Michael Brown</strong></p>
-        <div class="nss-topic">NSS Topic: Community Development through Technology</div>
+        <p class="team-members">
+            <strong>Anuswar</strong> 🌟, <strong>Sathwik</strong> 🌟, <strong>Vishwas</strong> 🌟, 
+            <strong>Karan</strong> 🌟, <strong>Suhel</strong> 🌟, <strong>Yukta</strong> 🌟, 
+            <strong>Smitha</strong> 🌟, <strong>Supritha</strong> 🌟, <strong>Sharanya</strong> 🌟, 
+            <strong>Vaishnavi</strong> 🌟, <strong>Shreya</strong> 🌟, <strong>Ramya</strong> 🌟
+        </p>
+        <div class="nss-topic">Topic: Organize national integration and social harmony workshop 🌍</div>
     </div>
 
     <h2 style="text-align: center; margin-top: 30px;">Personal Website Directory</h2>
@@ -103,6 +146,7 @@
             <p>Passionate about technology and creativity. Hobbies include photography, reading, hiking, and playing guitar.</p>
         </li>
         <!-- Add more website items as needed -->
+
         <!-- Example: -->
         <!-- <li class="website-item">
             <a href="jane_smith.html">Jane Smith <span class="emoji">&#x1F4BB;</span></a>
