@@ -1,157 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NSS Team Directory</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NSS Activity Report</title>
     <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      /*=============== RESET ===============*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        body {
-            background-color: #f0f2f5;
-            padding: 20px;
-        }
+      /*=============== BASE ===============*/
+      body {
+        padding: 20px;
+      }
 
-        .report {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            text-align: center;
-        }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-        .team-image {
-            width: 100%;
-            max-width: 200px;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-        }
+      .profile-image {
+        height: 150px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+      }
 
-        .team-names {
-            font-size: 28px;
-            margin-bottom: 10px;
-            color: #333;
-            font-weight: bold;
-        }
+      /*=============== HEADER ===============*/
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-        .team-members {
-            font-size: 18px;
-            color: #555;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
+      header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+        color: #4caf50;
+      }
 
-        .nss-topic {
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: #FF5733; /* Bright orange */
-            font-weight: bold;
-        }
+      header p {
+        font-size: 18px;
+      }
 
-        .website-list {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            text-align: left;
-        }
+      /*=============== SECTION ===============*/
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
 
-        .website-item {
-            margin-bottom: 20px;
-            padding: 15px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
-            background-color: #fff;
-        }
+      .section:hover {
+        transform: scale(1.05);
+      }
 
-        .website-item:hover {
-            transform: translateY(-5px);
-        }
+      .section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #4caf50;
+        display: flex;
+        align-items: center;
+      }
 
-        .website-item a {
-            text-decoration: none;
-            color: #007BFF; /* Bright blue */
-            font-weight: bold;
-            font-size: 18px;
-            display: inline-block;
-            margin-bottom: 5px;
-        }
+      .section p {
+        line-height: 1.6;
+      }
 
-        .website-item p {
-            margin: 0;
-            font-size: 16px;
-            color: #666;
-        }
+      /*=============== TEAM LIST ===============*/
+      .team-list,
+      .website-list {
+        list-style-type: none;
+        padding: 0;
+      }
 
-        .emoji {
-            font-size: 20px;
-            margin-right: 5px;
-        }
+      .team-list li,
+      .website-list li {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
 
-        @media (max-width: 600px) {
-            .report {
-                padding: 20px;
-            }
+      .website-list li a {
+        color: #4caf50;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
-            .team-names {
-                font-size: 24px;
-            }
+      .website-list li a:hover {
+        text-decoration: underline;
+      }
 
-            .team-members {
-                font-size: 16px;
-            }
+      /*=============== FOOTER ===============*/
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
 
-            .nss-topic {
-                font-size: 18px;
-            }
+      footer a {
+        color: #4caf50;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
-            .website-item a {
-                font-size: 16px;
-            }
-
-            .website-item p {
-                font-size: 14px;
-            }
-        }
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <div class="report">
-        <img src="asset/images/team-members.jpeg" alt="Team Image" class="team-image">
-        <div class="team-names">Team Members:</div>
-        <p class="team-members">
-            <strong>Anuswar</strong> 🌟, <strong>Sathwik</strong> 🌟, <strong>Vishwas</strong> 🌟, 
-            <strong>Karan</strong> 🌟, <strong>Suhel</strong> 🌟, <strong>Yukta</strong> 🌟, 
-            <strong>Smitha</strong> 🌟, <strong>Supritha</strong> 🌟, <strong>Sharanya</strong> 🌟, 
-            <strong>Vaishnavi</strong> 🌟, <strong>Shreya</strong> 🌟, <strong>Ramya</strong> 🌟
+  </head>
+  <body>
+    <div class="container">
+      <!--=============== HEADER ===============-->
+      <header>
+        <img
+          src="asset/images/team-members.jpeg"
+          alt="Profile Image"
+          class="profile-image"
+        />
+        <h1>NSS Activity Report</h1>
+        <p>
+          Organising a National Integration and Social Harmony Workshop in a
+          Kannada Medium School
         </p>
-        <div class="nss-topic">Topic: Organize national integration and social harmony workshop 🌍</div>
+      </header>
+
+      <!--=============== ABOUT THE ACTIVITY ===============-->
+      <section class="section">
+        <h2>About the Activity <span>&#x1F4DA;</span></h2>
+        <p>
+          This workshop aims to teach kids about HTML and CSS by building a
+          personal website. It is part of the NSS activity focused on promoting
+          national integration and social harmony.
+        </p>
+      </section>
+
+      <!--=============== TEAM MEMBERS ===============-->
+      <section class="section">
+        <h2>Team Members <span>&#x1F91D;</span></h2>
+        <ul class="team-list">
+          <li>Anuswar</li>
+          <li>Sathwik</li>
+          <li>Vishwas</li>
+          <li>Karan</li>
+          <li>Suhel</li>
+          <li>Yukta</li>
+          <li>Smitha</li>
+          <li>Supritha</li>
+          <li>Sharanya</li>
+          <li>Vaishnavi</li>
+          <li>Shreya</li>
+          <li>Ramya</li>
+        </ul>
+      </section>
+
+      <!--=============== WEBSITES ===============-->
+      <section class="section">
+        <h2>student Websites <span>&#x1F4BB;</span></h2>
+        <ul class="website-list">
+          <li>
+            <a href="asset/others/student.html">John Doe's Website</a>
+          </li>
+
+          <!-- Add more kids' websites as needed -->
+        </ul>
+      </section>
+
+      <!--=============== FOOTER ===============-->
+      <footer>
+        <p>
+          &copy; 2024
+          <a target="_blank" href="https://anuswarr.netlify.app/">Anuswar</a>.
+          All rights reserved.
+        </p>
+      </footer>
     </div>
-
-    <h2 style="text-align: center; margin-top: 30px;">Personal Website Directory</h2>
-
-    <ul class="website-list">
-        <li class="website-item">
-            <a href="asset/others/student.html">John Doe <span class="emoji">&#x1F601;</span></a>
-            <p>Passionate about technology and creativity. Hobbies include photography, reading, hiking, and playing guitar.</p>
-        </li>
-        <!-- Add more website items as needed -->
-
-        <!-- Example: -->
-        <!-- <li class="website-item">
-            <a href="jane_smith.html">Jane Smith <span class="emoji">&#x1F4BB;</span></a>
-            <p>Detail your description and hobbies here.</p>
-        </li> -->
-    </ul>
-</body>
+  </body>
 </html>

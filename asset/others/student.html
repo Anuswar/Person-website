@@ -1,179 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Doe - Personal Website</title>
     <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+      /*=============== RESET ===============*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
 
-        /* Basic styling for the header */
-        header {
-            background-color: #4CAF50; /* Bright green */
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
+      /*=============== BASE ===============*/
+      body {
+        padding: 20px;
+      }
 
-        .header-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-        header h1 {
-            font-size: 36px;
-            margin-bottom: 10px;
-            display: inline-block; /* Ensures emojis align correctly */
-        }
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+      }
 
-        header p {
-            font-size: 18px;
-        }
+      /*=============== HEADAR ===============*/
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
-        /* Styling for main content */
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
+      header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
 
-        /* Styling for sections */
-        .about-section, .hobbies-section {
-            margin-bottom: 30px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
+      header p {
+        font-size: 18px;
+      }
 
-        .section-content {
-            padding: 20px;
-        }
+      /*=============== SECTION ===============*/
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
 
-        .about-section h2, .hobbies-section h2 {
-            color: #333;
-            font-size: 24px;
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
+      .section:hover {
+        transform: scale(1.05);
+      }
 
-        .about-section h2::after, .hobbies-section h2::after {
-            content: ' 🌟';
-            font-size: 20px;
-        }
+      .section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #4caf50;
+        display: flex;
+        align-items: center;
+      }
 
-        .about-section p {
-            line-height: 1.6;
-        }
+      .section p {
+        line-height: 1.6;
+      }
 
-        /* Styling for hobbies list */
-        .hobbies-list {
-            list-style-type: none;
-            padding: 0;
-        }
+      /*=============== HOBBIES ===============*/
+      .hobbies-list {
+        list-style-type: none;
+        padding: 0;
+      }
 
-        .hobbies-list li {
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
+      .hobbies-list li {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
 
-        /* Styling for footer */
-        footer {
-            background-color: #4CAF50; /* Bright green */
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
+      /*=============== FOOTER ===============*/
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
 
-        .footer-content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
+      footer a {
+        color: #4caf50;
+        text-decoration: none;
+        font-weight: bold;
+      }
 
-        footer p {
-            font-size: 14px;
-        }
-
-        /* Responsive media queries */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 28px;
-            }
-            header p {
-                font-size: 16px;
-            }
-            .about-section h2, .hobbies-section h2 {
-                font-size: 22px;
-            }
-            .about-section p {
-                font-size: 16px;
-            }
-            .hobbies-list li {
-                font-size: 16px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 24px;
-            }
-            header p {
-                font-size: 14px;
-            }
-            .about-section h2, .hobbies-section h2 {
-                font-size: 20px;
-            }
-            .about-section p {
-                font-size: 14px;
-            }
-            .hobbies-list li {
-                font-size: 14px;
-            }
-        }
+      footer a:hover {
+        text-decoration: underline;
+      }
     </style>
-</head>
-<body>
-    <header>
-        <div class="header-content">
-            <h1>John Doe <span>&#x1F601;</span></h1>
-            <p>Welcome to my personal website!</p>
-        </div>
-    </header>
+  </head>
+  <body>
+    <div class="container">
+      <!--=============== HEADER ===============-->
+      <header>
+        <img
+          src="https://via.placeholder.com/150"
+          alt="Profile Image"
+          class="profile-image"
+        />
+        <h1>John Doe <span>&#x1F601;</span></h1>
+        <p>
+          A passionate individual with a love for technology and creativity.
+        </p>
+      </header>
 
-    <main>
-        <section class="about-section">
-            <div class="section-content">
-                <h2>About Me <span>&#x1F913;</span></h2>
-                <p>Hello! I'm John Doe, a passionate individual with a keen interest in technology and creativity.</p>
-            </div>
-        </section>
+      <!--=============== ABOUT ME ===============-->
+      <section class="section">
+        <h2>About Me <span>&#x1F913;</span></h2>
+        <p>
+          Hello! I'm John Doe, a passionate individual with a keen interest in
+          technology and creativity. I love to explore new things and push the
+          boundaries of what's possible.
+        </p>
+      </section>
 
-        <section class="hobbies-section">
-            <div class="section-content">
-                <h2>Hobbies <span>&#x1F3A8;</span></h2>
-                <ul class="hobbies-list">
-                    <li>Photography <span>&#x1F4F7;</span></li>
-                    <li>Reading <span>&#x1F4DA;</span></li>
-                    <li>Hiking <span>&#x1F6B5;</span></li>
-                    <li>Playing Guitar <span>&#x1F3B8;</span></li>
-                </ul>
-            </div>
-        </section>
-    </main>
+      <!--=============== HOBBIES ===============-->
+      <section class="section">
+        <h2>Hobbies <span>&#x1F3A8;</span></h2>
+        <ul class="hobbies-list">
+          <li>Photography</li>
+          <li>Reading</li>
+          <li>Hiking</li>
+          <li>Playing Guitar</li>
+        </ul>
+      </section>
 
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2024 John Doe. All rights reserved.</p>
-        </div>
-    </footer>
-</body>
+      <!--=============== FOOTER ===============-->
+      <footer>
+        <p>
+          &copy; 2024
+          <a target="_blank" href="https://anuswarr.netlify.app/">Anuswar</a>.
+          All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
