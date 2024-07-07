@@ -2,7 +2,7 @@
 
 ## 📋 NSS Activity Report
 
-This repository contains the source code and report for organizing a National Integration and Social Harmony Workshop in a Kannada Medium School as part of NSS activities.
+This repository contains the source code for the workshop aims to teach kids about HTML and CSS by building a personal website. It is part of the NSS activity focused on promoting national integration and social harmony.
 
 ## 🛠️ Installation
 
