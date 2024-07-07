@@ -22,8 +22,8 @@ The project structure is organized as follows:
 
 - **index.html**: The main HTML file containing the structure of the report.
 - **assets**: Folder containing images and others folder.
-- **images**:  Folder containing images used in the website.
-- **others/**: Folder containing student-created websites.
+  - **images**: Folder containing images used in the website.
+  - **others**: Folder containing student-created websites.
 - **LICENSE.md**: License information for the project.
 - **README.md**: Documentation for the project (you are here).
 
