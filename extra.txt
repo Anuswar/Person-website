@@ -1,0 +1,259 @@
+emoji: https://www.w3schools.com/charsets/ref_emoji_smileys.asp
+repo: https://github.com/Anuswar/nss-activity-website.git
+website: https://nss-activity.netlify.app/
+image converter: https://image.online-convert.com/convert-to-jpg
+
+--
+
+Floating Support: Anuswar
+Cameraman: Vishwas
+
+Group 1: 10 students - Sathwik: 
+student-1.html  image-1.jpg
+student-2.html  image-2.jpg
+student-3.html  image-3.jpg
+student-4.html  image-4.jpg
+student-5.html  image-5.jpg
+student-6.html  image-6.jpg
+student-7.html  image-7.jpg
+student-8.html  image-8.jpg
+student-9.html  image-9.jpg
+student-10.html image-10-.jpg
+
+Group 2: 6 students - Suhel: 
+student-11.html image-11.jpg
+student-12.html image-12.jpg
+student-13.html image-13.jpg
+student-14.html image-14.jpg
+student-15.html image-15.jpg
+student-16.html image-16.jpg
+
+Group 3: 6 students - Yukta:
+student-17.html image-17.jpg
+student-18.html image-18.jpg
+student-19.html image-19.jpg
+student-20.html image-20.jpg
+student-21.html image-21.jpg
+student-22.html image-22.jpg
+
+Group 4: 6 students - Smitha:
+student-23.html image-23.jpg
+student-24.html image-24.jpg
+student-25.html image-25.jpg
+student-26.html image-26.jpg
+student-27.html image-27.jpg
+student-28.html image-28.jpg
+
+Group 5: 6 students - Supritha:
+student-29.html image-29.jpg
+student-30.html image-30.jpg
+student-31.html image-31.jpg
+student-32.html image-32.jpg
+student-33.html image-33.jpg
+student-34.html image-34.jpg
+
+Group 6: 6 students - Sharanya:
+student-35.html image-35.jpg
+student-36.html image-36.jpg
+student-37.html image-37.jpg
+student-38.html image-38.jpg
+student-39.html image-39.jpg
+student-40.html image-40.jpg
+
+Group 7: 6 students - Vaishnavi:
+student-41.html image-41.jpg
+student-42.html image-42.jpg
+student-43.html image-43.jpg
+student-44.html image-44.jpg
+student-45.html image-45.jpg
+student-46.html image-46.jpg
+
+Group 8: 6 students - Shreya:
+student-47.html image-47.jpg
+student-48.html image-48.jpg
+student-49.html image-49.jpg
+student-50.html image-50.jpg
+student-51.html image-51.jpg
+student-52.html image-52.jpg
+
+Group 9: 6 students - Ramya: 
+student-53.html image-53.jpg
+student-54.html image-54.jpg
+student-55.html image-55.jpg
+student-56.html image-56.jpg
+student-57.html image-57.jpg
+student-58.html image-58.jpg
+
+Group 10: 6 students - karan:
+student-59.html image-59.jpg
+student-60.html image-60.jpg
+student-61.html image-61.jpg
+student-62.html image-62.jpg
+student-63.html image-63.jpg
+student-64.html image-64.jpg
+
+--
+
+Example code:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link
+      rel="shortcut icon"
+      href="../images/favicon.png"
+      type="image/svg+xml"
+    />
+
+    <style>
+      /*=============== RESET ===============*/
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      /*=============== BASE ===============*/
+      body {
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .profile-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin: 0 auto;
+        display: block;
+      }
+
+      /*=============== HEADER ===============*/
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      header h1 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      /*=============== SECTION ===============*/
+      .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .section:hover {
+        transform: scale(1.05);
+      }
+
+      .section h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #4caf50;
+        display: flex;
+        align-items: center;
+      }
+
+      .section p {
+        line-height: 1.6;
+      }
+
+      /*=============== HOBBIES ===============*/
+      .hobbies-list {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .hobbies-list li {
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+
+      /*=============== FOOTER ===============*/
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      footer a {
+        color: #4caf50;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img src="../images/image-[IMAGE_N.O].jpg" alt="Loading..." class="profile-image" />
+        <h1>[NAME] <span>&#x1F601;</span></h1>
+        <p>[SHORT_DESCRIPTION]</p>
+      </header>
+
+      <!-- About Me Section -->
+      <section class="section">
+        <h2>About Me <span>&#x1F913;</span></h2>
+        <p>
+          Hi! I'm [NAME], [DESCRIPTION].
+        </p>
+      </section>
+
+      <!-- Hobbies Section -->
+      <section class="section">
+        <h2>Hobbies <span>&#x1F3A8;</span></h2>
+        <ul class="hobbies-list">
+          <li>[HOBBY_1]</li>
+          <li>[HOBBY_2]</li>
+          <li>[HOBBY_3]</li>
+          <li>[HOBBY_4]</li>
+        </ul>
+      </section>
+
+      <!--=============== FOOTER ===============-->
+      <footer>
+        <p>
+          &copy; 2024
+          <a target="_blank" href="https://anuswarr.netlify.app/">Anuswar</a>.
+          All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+[IMAGE_N.O] with the file name of the person's profile image.
+[ALT_TEXT] with the alternative text for the profile image.
+[NAME] with the person's name.
+[SHORT_DESCRIPTION] with a brief description (e.g., "Famous Indian cricketer").
+[DESCRIPTION] with a short paragraph about the person.
+[HOBBY_1], [HOBBY_2], [HOBBY_3], and [HOBBY_4] with the person's hobbies.
+
+--
+
+
