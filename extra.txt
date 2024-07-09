@@ -16,27 +16,27 @@ student-4.html  image-4.jpg
 student-5.html  image-5.jpg
 student-6.html  image-6.jpg
 student-7.html  image-7.jpg
+
+Group 2: 6 students - Suhel:
 student-8.html  image-8.jpg
 student-9.html  image-9.jpg
 student-10.html image-10-.jpg
-
-Group 2: 6 students - Suhel: 
 student-11.html image-11.jpg
 student-12.html image-12.jpg
 student-13.html image-13.jpg
 student-14.html image-14.jpg
-student-15.html image-15.jpg
-student-16.html image-16.jpg
 
 Group 3: 6 students - Yukta:
+student-15.html image-15.jpg
+student-16.html image-16.jpg
 student-17.html image-17.jpg
 student-18.html image-18.jpg
 student-19.html image-19.jpg
 student-20.html image-20.jpg
 student-21.html image-21.jpg
-student-22.html image-22.jpg
 
 Group 4: 6 students - Smitha:
+student-22.html image-22.jpg
 student-23.html image-23.jpg
 student-24.html image-24.jpg
 student-25.html image-25.jpg
