@@ -18,12 +18,12 @@ student-6.html  image-6.jpg
 student-7.html  image-7.jpg
 
 Group 2: 7 students - Suhel:
-student-8.html  image-8.jpg
-student-9.html  image-9.jpg
-student-10.html image-10-.jpg
-student-11.html image-11.jpg
-student-12.html image-12.jpg
-student-13.html image-13.jpg
+student-8.html  image-8.jpg...
+student-9.html  image-9.jpg...
+student-10.html image-10.jpg..
+student-11.html image-11.jpg...
+student-12.html image-12.jpg..
+student-13.html image-13.jpg..
 student-14.html image-14.jpg
 
 Group 3: 7 students - Yukta:
